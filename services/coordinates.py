@@ -2,7 +2,7 @@ import requests
 
 
 def get_coordinates(customer_city, customer_country):
-    """Fetches coordinates from OpenStreetMap's Nominatim API for a city and country.
+    """ Fetches coordinates from OpenStreetMap's Nominatim API for a city and country.
 
     Args:
         customer_city (str): Name of the city provided by the user.
@@ -10,7 +10,7 @@ def get_coordinates(customer_city, customer_country):
 
     Returns:
         tuple: A tuple containing (city_latitude, city_longitude, country_latitude, country_longitude).
-               All values can be None if no results are found or there are errors.
+               All values can be None if no results or errors are found.
     """
 
     base_url = "https://nominatim.openstreetmap.org/search?format=json"
