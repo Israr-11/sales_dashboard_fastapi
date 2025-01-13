@@ -14,7 +14,7 @@ def dBConnection():
         db = client[db_name]
         collection = db[collection_name]
 
-        # Check if the connection is successful
+        # Check if the connection is successful or not
         client.admin.command('ping')
         print("Pinged your deployment. You successfully connected to MongoDB!")
 
