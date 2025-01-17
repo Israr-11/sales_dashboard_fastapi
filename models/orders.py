@@ -5,7 +5,7 @@ from pydantic import BaseModel, Field, field_validator
 
 class Order(BaseModel):
     customerName: str = Field(..., description="Name of the customer")
-    # newCustomer: bool = Field(..., description="Indicates if the customer is actually new")
+    # newCustomer: bool = Field(..., description="Indicates if the customer new")
     newCustomer: Optional[bool]=None
     price: float = Field(..., gt=0, description="Order price")
     currency: str = Field(..., description="Currency of the order")
