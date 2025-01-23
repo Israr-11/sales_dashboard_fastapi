@@ -3,7 +3,7 @@
 
 ## Step 1: Install dependencies
 
-Installation:
+Installation
 
 pip install
 
